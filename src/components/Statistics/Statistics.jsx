@@ -28,5 +28,3 @@ Statistics.propTypes = {
   positivePercentage: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
     .isRequired,
 };
-
-export default Statistics;
