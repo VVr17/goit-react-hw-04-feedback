@@ -3,7 +3,7 @@ export const theme = Object.freeze({
     white: '#ffffff',
     btnColor: 'rgb(173, 216, 230)',
     btnShadowColor: 'rgba(0, 0, 0, 0.15)',
-    backgroundColor: 'rgba(250, 235, 215, .3)',
+    backgroundColor: 'rgba(250, 235, 215, .2)',
   },
 
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
