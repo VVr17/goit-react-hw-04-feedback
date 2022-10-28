@@ -3,6 +3,11 @@ import { Statistics } from 'components/Statistics/Statistics';
 import { FeedbackOptions } from './FeedbackOptions/FeedbackOptions';
 import { Section } from './Section/Section';
 
+const KEYS = {
+  good: 'good',
+  neutral: 'neutral',
+  bad: 'bad',
+};
 export const App = () => {
   const [good, setGood] = useState(0);
   const [neutral, setNeutral] = useState(0);
@@ -20,13 +25,13 @@ export const App = () => {
   const onBtnClick = event => {
     const { name } = event.target;
     switch (name) {
-      case 'good':
+      case KEYS.good:
         setGood(prevState => prevState + 1);
         break;
-      case 'neutral':
+      case KEYS.neutral:
         setNeutral(prevState => prevState + 1);
         break;
-      case 'bad':
+      case KEYS.bad:
         setBad(prevState => prevState + 1);
         break;
       default:
